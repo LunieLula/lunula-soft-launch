@@ -1,0 +1,181 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "heal your head",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "shop LUNULA",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/lunula-sand-mark-on-bottom-more-rocks_1a9ab358-155a-4fe2-b795-fb0e4b1d4f6f.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "rich_text_GTpWXb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_9F6Nzi": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>one simple ritual, limitless benefits</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_FqegFp": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>Lunula is a complete scalp health solution.</strong></h3><p>Our daily treatment and nightly serum, both packed with nature’s most potent botanicals, deliver all the benefits your scalp needs in only two products. </p><h3><strong>The Lunula Scalp Treatment is</strong> <strong>the first to combine CBD and CAPIXYL in one product.</strong> </h3><p>These powerful natural ingredients can strengthen hair and stimulate growth. CBD is antioxidant and anti-inflammatory, providing many benefits to nourish the scalp.¹ CAPIXYL is an effective naturally-derived DHT inhibitor—like minoxidil, it can restore and regenerate hair follicles shrunken by DHT.²</p><p>But Lunula doesn't stop there - together, our treatment and serum contain over thirty different pure, high-performance plant-based ingredients, and each provides distinct trichological benefits.³</p><h3><strong>The result? A healthier scalp and stronger, fuller hair from the root up.</strong></h3><p></p><p>¹ ² ³ For footnotes and more information, please see our <a href=\"/pages/backed-by-science\" title=\"Backed by Science\"><em>Backed by Science</em></a> page.</p><p></p>"
+          }
+        },
+        "button_gwDFfm": {
+          "type": "button",
+          "settings": {
+            "button_label": "shop LUNULA",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9F6Nzi",
+        "text_FqegFp",
+        "button_gwDFfm"
+      ],
+      "custom_css": [
+        "p {font-size: \"1rem\";}",
+        "h2 {margin-bottom: \"40px\" !important;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 96,
+        "padding_bottom": 64
+      }
+    },
+    "rich_text_Jf7AmJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wVUY6q": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_FKqttW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>* The above statements have not been evaluated by the FDA. Lunula products are not intended to diagnose, treat, cure, or prevent any disease.</p>"
+          }
+        },
+        "button_YMbX7d": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_wVUY6q",
+        "text_FKqttW",
+        "button_YMbX7d"
+      ],
+      "custom_css": [
+        "p {font-size: 1rem;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 8
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "rich_text_GTpWXb",
+    "rich_text_Jf7AmJ",
+    "featured_collection"
+  ]
+}
