@@ -3323,3 +3323,24 @@ details-disclosure > details {
     --sparkle: url('./sparkle.gif');
   }
 }
+
+/* Dark mode — overrides Dawn's color scheme custom properties when the OS is set to dark.
+   Values are R,G,B triples to match Dawn's rgba(var(--color-*)) pattern.
+   Tune these in the Shopify admin color scheme settings or override them here. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: 18, 18, 18;
+    --color-foreground: 230, 230, 230;
+    --color-link: 180, 180, 255;
+    --color-button: 80, 80, 80;
+    --color-button-text: 230, 230, 230;
+    --color-secondary-button: 30, 30, 30;
+    --color-secondary-button-text: 200, 200, 200;
+    --color-shadow: 0, 0, 0;
+    --color-badge-foreground: 230, 230, 230;
+    --color-badge-background: 40, 40, 40;
+    --color-badge-border: 100, 100, 100;
+    --gradient-background: rgb(18, 18, 18);
+    --payment-terms-background-color: rgb(18, 18, 18);
+  }
+}

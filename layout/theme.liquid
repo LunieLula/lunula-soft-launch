@@ -319,34 +319,5 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
     
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        const hour = new Date().getHours();
-        const body = document.body;
-        const toggleButton = document.getElementById("darkModeToggle");
-    
-        // Apply dark mode based on time
-        if (hour >= 19 || hour < 7) {
-          body.classList.add("dark-mode");
-        }
-    
-        // Check if the user has manually set a preference
-        if (localStorage.getItem("darkMode") === "enabled") {
-          body.classList.add("dark-mode");
-        }
-    
-        // Toggle dark mode on button click
-        toggleButton.addEventListener("click", function() {
-          body.classList.toggle("dark-mode");
-    
-          // Store preference in local storage
-          if (body.classList.contains("dark-mode")) {
-            localStorage.setItem("darkMode", "enabled");
-          } else {
-            localStorage.setItem("darkMode", "disabled");
-          }
-        });
-      });
-    </script>
   </body>
 </html>
