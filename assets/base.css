@@ -3327,8 +3327,13 @@ details-disclosure > details {
 /* Dark mode — overrides Dawn's color scheme custom properties when the OS is set to dark.
    Values are R,G,B triples to match Dawn's rgba(var(--color-*)) pattern.
    Tune these in the Shopify admin color scheme settings or override them here. */
+/* Dawn scopes --color-* variables to color scheme classes (.color-background-1, etc.)
+   on each section, which override :root. We must target those classes directly here
+   so dark mode wins over the hardcoded light values set by the theme inline styles. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root,
+  .color-background-1,
+  .color-background-2 {
     --color-background: 18, 18, 18;
     --color-foreground: 230, 230, 230;
     --color-link: 180, 180, 255;
@@ -3342,5 +3347,11 @@ details-disclosure > details {
     --color-badge-border: 100, 100, 100;
     --gradient-background: rgb(18, 18, 18);
     --payment-terms-background-color: rgb(18, 18, 18);
+  }
+
+  .color-background-2 {
+    --color-background: 28, 28, 28;
+    --gradient-background: rgb(28, 28, 28);
+    --payment-terms-background-color: rgb(28, 28, 28);
   }
 }
