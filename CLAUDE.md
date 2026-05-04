@@ -46,8 +46,8 @@ This is a standard **OS 2.0 JSON template** theme. The key mental model:
 
 These are the only meaningful departures from stock Dawn v10:
 
-### 1. Time-based Dark Mode (`layout/theme.liquid`, lines 322–350)
-A `DOMContentLoaded` JS block that applies `.dark-mode` to `<body>` based on hour of day (7pm–7am) and stores user preference in `localStorage`. **Known issue:** this causes a flash of unstyled content (FOUC) on page load because it runs client-side after render. It also won't respect user preference on first SSR paint. Needs to be replaced with an inline `<script>` in `<head>` (before CSS) or a cookie-based approach.
+### 1. Dark Mode (`assets/base.css`)
+Dark mode is implemented via CSS `prefers-color-scheme: dark` media queries. No JS involved — follows the OS-level setting.
 
 ### 2. Scroll Animations (`assets/animations.js`)
 Uses `IntersectionObserver` to add/remove `scroll-trigger--offscreen` class. Conditionally loaded based on `settings.animations_reveal_on_scroll`. Works correctly; no known issues.
@@ -70,11 +70,10 @@ Third-party apps (Judge.me, payment processors, etc.) are integrated via the sta
 
 ## Known Issues / Priority Optimization Work
 
-1. **Dark mode FOUC** — replace the `DOMContentLoaded` dark mode script with an inline `<head>` script to prevent flash
-2. **`spacing_sections: 0`** in `config/settings_data.json` — all section spacing is zeroed out; verify this is intentional
-3. **No metafields defined** — if product-level custom data (e.g., CBD potency, certifications) is needed, metafields should be defined in `.shopify/metafields.json`
-4. **`show_rating: false`** on product template — Judge.me ratings may not be surfacing on PDPs; verify intent
-5. **CSS per-section loading** — `main-product.liquid` loads ~7 CSS files inline via `stylesheet_tag`. This is Dawn's default pattern and generally fine, but worth auditing if LCP scores are poor
+1. **`spacing_sections: 0`** in `config/settings_data.json` — all section spacing is zeroed out; verify this is intentional
+2. **No metafields defined** — if product-level custom data (e.g., CBD potency, certifications) is needed, metafields should be defined in `.shopify/metafields.json`
+3. **`show_rating: false`** on product template — Judge.me ratings may not be surfacing on PDPs; verify intent
+4. **CSS per-section loading** — `main-product.liquid` loads ~7 CSS files inline via `stylesheet_tag`. This is Dawn's default pattern and generally fine, but worth auditing if LCP scores are poor
 
 ## What Not to Change
 
